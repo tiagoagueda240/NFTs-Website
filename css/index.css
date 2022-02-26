@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #171717;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    
+}
+nav{
+
+}
+nav ul{
+
+}
+
+nav ul li{
+    display: inline;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+nav ul li a{
+color: #CECECE;
+}
+
+nav ul li a:hover{
+    color: #AD6CCA;
+}
+
+nav ul li:last-child a{
+    color: #01DE8E;
+}
+
+nav ul li:nth-last-child(2){
+    padding: 5px 30px;
+    border: 1px solid #AD6CCA;
+    border-radius: 10px;
+}
+
+nav ul li:nth-last-child(2):hover{
+    background-color: #AD6CCA;
+}
+
+nav ul li:nth-last-child(2):hover a{
+    color: #CECECE;
+}
+
+.banner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/BG-Slider.png");
+    background-position: center;
+}
+
+.banner .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner .content img{
+    margin: auto;
+}
+
+.banner .content h1{
+    color: #CECECE;
+    font-size: 40px;
+}
+
+.banner .content h1 b{
+    color: #01DE8E;
+}
+
+.banner .content h3{
+    color: #DEAAF5;
+    letter-spacing: 0.4em;
+}
+
+.clients{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 100px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    padding: 0 15%;
+    margin: 50px 0;
+    background: url("../img/BG-about.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: center;
+}
+
+.about .galeria{
+    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+    
+}
+.about .info{
+    width: 50vw;
+    margin: auto 55px;
+}
+
+.info span{
+    color: #01DE8E;
+}
+
+.info h2{
+    color: #CECECE;
+}
+
+.info p{
+    color: #6C6C6C;
+    margin-bottom: 50px;
+}
+
+.botão-fundo{
+    padding: 10px 20px;
+    background-color: #873AA9;
+    border-radius: 10px;
+    color: #CECECE;
+}
+
+.botão-fundo:hover{
+    border: 1px solid #873AA9;
+    background-color: transparent;
+    color: #873AA9;
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    padding: 100px 15%;
+    background: url("../img/BG-team.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.team .info{
+    width: 50vw;
+    margin: auto 0;
+    margin-right: 150px;
+}
+
+.team .team-info{
+    display: flex;
+}
+
+.team .team-info .member{
+    margin-right: 50px;
+}
+
+.team .team-info .member h3{
+    text-align: center;
+    color: #01DE8E;
+}
+
+.team .team-info .member p{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.roadmap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../img/BG-roadmap.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 15%;
+    margin-top: 100px;
+}
+
+.roadmap h1, .drop-start h1{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.roadmap p, .drop-start p{
+    text-align: center;
+    color: #6C6C6C;
+    font-size: 14px;
+}
+
+.roadmap .steps{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+    margin: 50px 0;
+}
+
+.roadmap .steps .step{
+    background-color: #0F0F16;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.roadmap .steps .step span{
+    color: #01DE8E;
+}
+
+.roadmap .steps .step h3{
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.roadmap .steps .step p{
+    color: #6C6C6C;
+    text-align: left;
+}
+
+.roadmap a{
+    margin: auto;
+}
+
+.drop-start .time{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.drop-start .time .info{
+    display: flex;
+    background-color: #1e1e2b54;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    margin-right: 20px;
+}
+
+.drop-start .time .info .circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1e1e2b;
+    border-radius: 50%;
+    width: 85%;
+    height: 85%;
+    margin: auto auto;
+}
+
+.drop-start .time .info .circle h2{
+    text-align: center;
+    font-size: 60px;
+    color: #01DE8E;
+}
+
+.drop-start .time .info .circle p{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 15%;
+    color: #FFFFFF;
+    background-image: url("../img/BG-footer.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+footer p{
+    margin: 50px 100px;
+}
+
+footer .botao-footer{
+    padding: 15px 50px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+footer .botao-footer:hover{
+    background-color: #873AA9;
+    border-color: #873AA9;
+}
+
+footer img{
+    margin-top: 50px;
+}
+
+footer nav ul li:last-child a{
+    color: #CECECE;
+}
+
+footer nav ul li:last-child a:hover{
+    color: #873AA9;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 50px 0;
+}
+.social a{
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  height: 45px;
+  width: 45px;
+  margin-right: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid #873AA9;
+  background-color: #873AA9;
+  color: #FFFFFF;
+}
+
+.social a:hover{
+  color: #873AA9;
+  background-color: transparent;
+}
+
+.social a i{
+  transition: transform 0.3s ease-in-out;
+}
+.social a:hover i{
+  transform: scale(1.2);
+}
+
+footer nav{
+    margin-bottom: 50px;
+}
+
+footer span{
+    color: #3F3F53;
+}
